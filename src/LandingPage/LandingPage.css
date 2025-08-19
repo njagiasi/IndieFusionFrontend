@@ -1,0 +1,292 @@
+.landing-page{
+  background-color: #ffffffe3;
+*{
+  color: black;
+
+}
+
+.navbar .nav-item {
+  line-height: 2;
+  font-family: cursive;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  word-spacing: 1px;
+  color: black;
+  font-weight: bold;
+ }
+
+ .col-gap{
+  column-gap: 30px;
+ }
+.navbar .nav-item:hover {
+  color: #525151; /* Darker blue on hover */
+  }
+
+.navbar .nav-item.active {
+  color: #343a40; /* Dark text */
+ }
+
+ .main-container .section1{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+ }
+
+ .background-color{
+  background-color: #b191e130;
+ }
+ 
+ .header-footer-color{
+  background-color: #863ff175;
+  ;
+ }
+ .main-container .section1 .left-col{
+  text-align: center;
+  margin: 10% auto ;
+ }
+
+ .bg-transparent-color {
+  background-color: #ffffffe3;
+ }
+ .main-container .section1 .left-col h1{
+  font-family:cursive;
+  font-size: clamp(16px, 10vw, 200px);
+  line-height: 0.8;
+ }
+ .main-container .section1 .left-col p{
+  font-family: cursive;
+  font-size: 20px;
+ }
+ .main-container .section1 .right-col img{
+  width: 100%; 
+height: auto;
+max-width: 100%;
+max-height: 100%; 
+object-fit: cover;
+ }
+
+ .section2 {
+    display: grid;
+    grid-template-columns: 1fr;
+ }
+
+ .content-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  padding: 0px 30px;
+  align-items: center;
+ }
+
+ .reverse-dir {
+  direction: rtl;
+ }
+
+ .content {
+  line-height: 2;
+    font-family: cursive;
+    font-size: 24px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: black;
+ }
+
+/* Cards Section */
+.cards-section {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  align-items: center;     
+  margin: 30px 0;
+  position: relative;
+  color: white;
+  gap: 0px; 
+}
+
+.explore-cards {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+.explore-cards .card {
+  height: 370px;
+  background-color: #853ff11f;
+}
+
+.explore-cards .card h3 {
+  font-family: cursive;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #6b076b;
+}
+
+.copy-right {
+  margin: 0px;
+  padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 1.5;
+  font-size: 20px;
+}
+
+.explore-cards .card > p {
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-col:nth-of-type(1):not(.active-card) {
+  left: -100px; /* Move the first non-active card towards the left */
+}
+
+.card-col:nth-of-type(2):not(.active-card) {
+  right: -100px; /* Move the first non-active card towards the left */
+}
+
+
+.card-col:nth-of-type(3):not(.active-card) {
+  right: -100px; /* Move the third non-active card towards the right */
+}
+
+
+/* If the first card is active, move the second card to the left */
+.card-col.active-card:nth-of-type(1) ~ .card-col:nth-of-type(2) {
+  transform: translateX(-200px); /* Move the second card to the left */
+}
+
+/* If the third card is active, move the second card to the right */
+.card-col.active-card:nth-of-type(3) ~ .card-col:nth-of-type(2) {
+  transform: translateX(100px); /* Move the second card to the right */
+}
+
+.active-card.card-col:nth-of-type(2) {
+  left: 25%; /* Move the first non-active card towards the left */
+  right: 25%;
+}
+.active-card.card-col:nth-of-type(3) {
+  right: 25%; /* Move the first non-active card towards the left */
+}
+
+
+
+.card-col {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  position: relative;
+  margin: 0 90px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Active Card Styles */
+.active-card {
+  z-index: 10;
+  transform: scale(1);  /* Slightly enlarge the active card */
+  margin-top: 150px; /* Brings the active card slightly forward */
+  padding: 10px;  /* Adds spacing for the active card */
+  position: absolute;  /* To bring it into the center */
+}
+
+.active-card .card {
+  transform: scale(1); /* Enlarge active card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  /* transition: all 0.3s ease-in-out; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 322px;
+  margin: 100px 0;
+  top: -50px
+}
+.active-card .card p{
+  font-size: 18px;
+  line-height: normal;
+  margin-top: 150px;
+}
+.active-card .card .card-image{
+  max-width: 120px;
+  max-height: 120px;
+  position: absolute;
+  top: 70px;
+  left: 100px;
+}
+.active-card .card h3{
+  margin-top: -40px;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+/* Non-Active Cards */
+
+
+/* General Card Styling */
+.card {
+  background-color: #853ff130;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+.card-image {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  max-width: 180px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.card p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.section3{
+  padding: 100px 0 !important;
+}
+.section3 h2{
+  text-align: center;
+  margin-top: -100px;
+}
+
+
+
+.footer{
+  /* text-align: center;
+  background-color: #853ff130; */
+  color: black;
+  padding: 10px 0;
+}
+.footer .socialIcon{
+  display: flex;
+  align-items: center;
+}
+.footer .socialIcon ul{
+  padding-left: 0;
+}
+.footer .socialIcon li{
+  display: inline-block;
+  padding: 0 10px;
+}
+.footer .socialIcon a{
+  text-decoration: none;
+  color: white;
+}
+.footer .socialIcon a:hover {
+  color: #8c8c8c;
+}
+.footer .socialIcon .fab{
+  font-family: 'FontAwesome' !important;
+  font-style: normal;
+  color: white;
+}
+
+.side-headings{
+  font-family: cursive;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+}

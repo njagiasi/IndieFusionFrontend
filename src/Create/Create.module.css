@@ -1,0 +1,49 @@
+.createPostCard {
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    height: 100vh;
+}
+
+.input-box {
+    width: 100%;
+}
+
+.icon {
+    font-size: 40px;
+    color: #853ff1;
+}
+
+.image-upload {
+    height: 300px;
+
+}
+
+.withBackground {
+    background-color: #d3d3d34a;
+    display: none;
+}
+
+.image-upload img {
+    height: 300px;
+    width: 100%;
+}
+
+.image-upload video {
+    height: 300px;
+    width: 100%;
+}
+
+.text-area {
+    height: 100px;
+}
+
+.post-height {
+    padding: 10px;
+    border: none;
+    background: #853ff112;
+}
+.font-size-family{
+    font-family: sans-serif;
+    font-size: 18px;
+}

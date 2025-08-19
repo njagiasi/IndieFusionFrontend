@@ -1,0 +1,77 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main-card-container {
+    padding: 20px;
+}
+.main-card {
+    border: 1px solid #0000002b;
+    border-radius: 5px;
+    box-shadow: -1px -1px 8px 0px rgb(0 0 0 / 25%);
+    height: auto;
+    padding: 20px;
+    align-items: center;
+}
+
+.card-items {
+    display: grid;
+    grid-template-columns: 0.3fr 3fr 1fr;
+    padding: 10px;
+    background-color: white;
+}
+
+.fafa-icon-size {
+    font-size: 40px;
+    display: grid;
+    text-align: center;
+}
+.card-gap{
+    display: grid;
+    row-gap: 20px;
+}
+
+.p-margin{
+    margin: 0px !important;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.indicator {
+    width: 50px;
+    height: 50px;
+}
+
+.message{
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 50ch;
+}
+.menu-date{
+    font-size: 12px;
+}
+.profile-img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.card-items:hover {
+    background-color: #80808014;
+    cursor: pointer;
+}
+
+.fafa-icons{
+    cursor: pointer;
+    font-size: 20px;
+}
+

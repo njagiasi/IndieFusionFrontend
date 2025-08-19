@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.main-Card {
+    border-radius: 5px;
+    box-shadow: -1px -1px 8px 0px rgb(0 0 0 / 25%);
+    height: auto;
+    padding: 20px;
+}
+
+.card-items {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    column-gap: 30px;
+    padding: 10px;
+    background-color: white;
+}
+
+.fafa-icon-size {
+    font-size: 40px;
+    display: grid;
+    text-align: center;
+}
+
+.icon-box{
+    padding: 15px;
+    background-color: #d3d3d34f;
+}
+
+.p-margin{
+    margin: 0px !important;
+}
+
+.date-font{
+    font-size: 12px;
+}
+
+.card-gap{
+    display: grid;
+    row-gap: 20px;
+}

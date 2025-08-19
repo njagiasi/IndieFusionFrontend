@@ -1,0 +1,31 @@
+.postContainer {
+    display: flex;
+    border: 0.2px solid lightgray;
+    width: 90%;
+    margin: auto;
+    column-gap: 10px;
+    /* box-shadow: 2px 2px 2px 2px lightgrey; */
+    box-shadow: -1px -1px 8px 0px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    height: 97vh;
+    margin-top: 10px;
+    background-color: #853ff10f !important;
+}
+
+
+.main-posts{
+    padding: 20px;
+    margin: 20px;
+    width: 80%;
+    overflow-y: scroll; /* Enable vertical scroll */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+   
+  
+    /* For Webkit browsers like Chrome and Safari */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+}
+
+
